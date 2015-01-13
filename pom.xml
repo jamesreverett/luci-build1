@@ -4,13 +4,13 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.sixsafetysystems</groupId>
-        <artifactId>mvn-test</artifactId>
-        <version>1.0</version>
-    </parent>
+    <!--<parent>-->
+        <!--<groupId>com.sixsafetysystems</groupId>-->
+        <!--<artifactId>mvn-test</artifactId>-->
+        <!--<version>1.0</version>-->
+    <!--</parent>-->
 
-    <groupId>com.sixsafetysystems.mvn-test</groupId>
+    <groupId>com.sixsafetysystems</groupId>
     <artifactId>luci-build1</artifactId>
     <packaging>nar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.codeswarm</groupId>
+            <artifactId>cpptasks-parallel</artifactId>
+            <version>20121119</version>
+        </dependency>
     </dependencies>
 
     <build>
