@@ -2,9 +2,12 @@
 <project name="tracer-bullet" default="dist" basedir=".">
     <description>Builds, tests, and packages for Six Safety Systems</description>
 
+    <!-- http://ant-contrib.sourceforge.net/ -->
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+
     <property name="lib"            location="../../lib" />
-    <property name="src.dir"        location="src" />
-    <property name="build.dir"      location="build" />
+    <property name="src.dir"        location="src/main/java" />
+    <property name="build.dir"      location="target" />
     <property name="classes.dir"    location="${build.dir}/classes" />
 
     <target name="dist" depends="clean,build,test" />
@@ -27,3 +30,15 @@
     </target>
 
 </project>
+
+
+<!--
+<project name="test" xmlns:cpptasks="antlib:net.sf.antcontrib.cpptasks">
+<target name="build-native">
+    <mkdir dir="/home/varun/Desktop/lucene/3018-test/check"/>
+    <cpptasks:cc outtype="executable" subsystem="console" outfile="BuildNativeDir" objdir="/home/varun/Desktop/lucene/3018-test">
+        <fileset file="/home/varun/Desktop/lucene/3018-test/hello.c" />
+    </cpptasks:cc>
+</target>
+</project>
+-->
