@@ -27,7 +27,8 @@
         <skipDeploy>true</skipDeploy> 
     </properties>
     
-    <build> 
+    <build>
+        <defaultGoal>install</defaultGoal>
         <plugins> 
             <plugin> 
                 <groupId>org.apache.maven.plugins</groupId> 
