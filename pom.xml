@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>com.sixsafetysystems</groupId>
-    <artifactId>thirdparty</artifactId>
+    <artifactId>luci</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>thirdparty</name>
+    <name>luci</name>
     <packaging>pom</packaging>
 
     <modules>
