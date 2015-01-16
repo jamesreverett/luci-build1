@@ -4,11 +4,11 @@
   
    <parent>
         <groupId>com.sixsafetysystems</groupId>
-        <artifactId>thirdparty</artifactId>
+        <artifactId>luci</artifactId>
         <version>1.0-SNAPSHOT</version>
    </parent>
 
-    <groupId>com.sixsafetysystems.thirdparty</groupId>
+    <groupId>com.sixsafetysystems.luci</groupId>
     <artifactId>gtest</artifactId>
     <packaging>nar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -40,10 +40,6 @@
                 <artifactId>nar-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <extensions>true</extensions>
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-nar-plugin</artifactId>-->
-                <!--<version>2.1-SNAPSHOT</version>-->
-                <!--<extensions>true</extensions>-->
                 <configuration>
                     <layout>NarLayout20</layout>
                     <libraries>
