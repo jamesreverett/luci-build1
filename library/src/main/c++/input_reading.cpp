@@ -3,7 +3,7 @@
 #include "input_reading.h"
 
 float InputReading::average_openness() {
-    return this.average_openness_;
+    return average_openness_;
 }
 
 float InputReading::left_openness() {
@@ -11,7 +11,7 @@ float InputReading::left_openness() {
 }
 void InputReading::set_left_openness(float val) {
     left_openness_= val;
-    this.UpdateAverageOpenness();
+    UpdateAverageOpenness();
 }
 
 float InputReading::right_openness() {
@@ -19,7 +19,7 @@ float InputReading::right_openness() {
 }
 void InputReading::set_right_openness(float val) {
     right_openness_= val;
-    this.UpdateAverageOpenness();
+    UpdateAverageOpenness();
 }
 
 long InputReading::epoch_time() {
@@ -48,7 +48,7 @@ void InputReading::UpdateAverageOpenness() {
         average_eye_ratio = (right_openness_ + left_openness_) / 2;
     }
 
-    this.average_openness_ = average_eye_ratio;
+    average_openness_ = average_eye_ratio;
 }
 
 void InputReading::Print() const {
