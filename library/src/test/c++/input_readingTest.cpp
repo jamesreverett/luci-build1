@@ -4,5 +4,5 @@
 
 TEST(InputReading, UpdateAverageOpenness) {
     InputReading input;
-    EXPECT_EQ(0.0, ir.average_openness());
+    EXPECT_EQ(0.0, input.average_openness());
 }
