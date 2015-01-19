@@ -25,14 +25,14 @@ void InputReading::set_right_openness(float val) {
 long InputReading::epoch_time() {
     return epoch_time_;
 }
-void InputReading::set_epoch_time(long val) {
+void InputReading::set_epoch_time(long int val) {
     epoch_time = val;
 }
 
 long InputReading::system_time() {
     return system_time_;
 }
-void InputReading::set_system_time(long val) {
+void InputReading::set_system_time(long int val) {
     system_time_ = val;
 }
 
