@@ -5,8 +5,8 @@
 
 class InputReading {
     public:
-        InputReading() : left_openness_(0), right_openness_(0) {}
-        // TODO: constructor with openness values
+        InputReading();
+        InputReading(float, float, long);
 
         float average_openness();
 
@@ -16,11 +16,11 @@ class InputReading {
         float right_openness();
         void set_right_openness(float val);
 
+        long device_timestamp();
+        void set_device_timestamp(long val);
+
         long epoch_time();
         void set_epoch_time(long val);
-
-        long system_time();
-        void set_system_time(long val);
 
         void Print() const;
 
@@ -30,8 +30,8 @@ class InputReading {
         float left_openness_;
         float right_openness_;
         float average_openness_;
-        long int epoch_time_;
-        long int system_time_;
+        long device_timestamp_;
+        long epoch_time_;
 };
 
 #endif  // INPUT_READING_H_

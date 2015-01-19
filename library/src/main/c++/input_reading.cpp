@@ -2,6 +2,23 @@
 
 #include "input_reading.h"
 
+InputReading::InputReading() {
+    left_openness_      = 0.0;
+    right_openness_     = 0.0;
+    average_openness_   = 0.0;
+    device_timestamp_   = 0;
+    epoch_time_         = 0;
+}
+
+InputReading::InputReading(float left, float right, long timestamp) {
+    left_openness_      = left;
+    right_openness_     = right;
+    average_openness_   = 0.0;
+    device_timestamp_   = timestamp;
+    epoch_time_         = 0;
+    UpdateAverageOpenness();
+}
+
 float InputReading::average_openness() {
     return average_openness_;
 }
@@ -22,19 +39,20 @@ void InputReading::set_right_openness(float val) {
     UpdateAverageOpenness();
 }
 
+long InputReading::device_timestamp() {
+    return device_timestamp_;
+}
+void InputReading::set_device_timestamp(long val) {
+    device_timestamp_ = val;
+}
+
 long InputReading::epoch_time() {
     return epoch_time_;
 }
-void InputReading::set_epoch_time(long int val) {
+void InputReading::set_epoch_time(long val) {
     epoch_time_ = val;
 }
 
-long InputReading::system_time() {
-    return system_time_;
-}
-void InputReading::set_system_time(long int val) {
-    system_time_ = val;
-}
 
 
 void InputReading::UpdateAverageOpenness() {
