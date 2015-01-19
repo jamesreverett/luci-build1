@@ -18,13 +18,17 @@ Exceptions:
 
 ** Use googletest framework
 - https://code.google.com/p/googletest/
+- https://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison
 Sample:
 - http://blog.bigpixel.ro/2013/11/integrating-maven-nar-plugin-with-googles-googletest-unit-test-framework/
 
 
 
 ** Use Travs CI
-
+- http://docs.travis-ci.com/user/languages/cpp/
+- http://docs.travis-ci.com/user/languages/java/
+Sample (using maven):
+- https://travis-ci.org/jamesreverett/luci-build1
 
 
 ==========
