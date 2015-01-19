@@ -26,7 +26,7 @@ long InputReading::epoch_time() {
     return epoch_time_;
 }
 void InputReading::set_epoch_time(long int val) {
-    epoch_time = val;
+    epoch_time_ = val;
 }
 
 long InputReading::system_time() {
