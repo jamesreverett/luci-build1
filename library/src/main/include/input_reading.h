@@ -3,12 +3,13 @@
 
 // TODO: which namespace??
 
+const float kEyeRatioBarrier = 0.350000;
+
 class InputReading {
     public:
+        // TODO: re-evaluate constructors vs setters - force 3 arg constructor?
         InputReading();
         InputReading(float, float, long);
-
-        float average_openness();
 
         float left_openness();
         void set_left_openness(float val);
@@ -22,16 +23,20 @@ class InputReading {
         long epoch_time();
         void set_epoch_time(long val);
 
-        void Print() const;
+        float average_openness();
+        int perclos();
+
+        void PrintJSON() const;
 
     private:
-        void UpdateAverageOpenness();
+        void EvaluateOpenness();
 
         float left_openness_;
         float right_openness_;
         float average_openness_;
         long device_timestamp_;
         long epoch_time_;
+        int perclos_; // SHOULD this be boolean 0/1 - other values?
 };
 
 #endif  // INPUT_READING_H_

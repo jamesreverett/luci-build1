@@ -11,9 +11,10 @@ Examples:
 
 
 ** Use google code conventions
-http://google-styleguide.googlecode.com/svn/trunk/cppguide.html
-Exceptions:
+- http://google-styleguide.googlecode.com/svn/trunk/cppguide.html
+Exceptions (!! NEED to discuss with Scott/Jay/?? !!):
 - 4 space indentation
+- .cpp file endings
 
 
 ** Use googletest framework
@@ -23,13 +24,25 @@ Sample:
 - http://blog.bigpixel.ro/2013/11/integrating-maven-nar-plugin-with-googles-googletest-unit-test-framework/
 
 
-
-** Use Travs CI
+** Use Travis CI
 - http://docs.travis-ci.com/user/languages/cpp/
 - http://docs.travis-ci.com/user/languages/java/
 Sample (using maven):
 - https://travis-ci.org/jamesreverett/luci-build1
 
+
+** Use Continuous Deployment (TODO - Research required)
+- foobar1
+- foobar2
+
+
+** IDE Recommendation (ie. project files checked-in)
+- TODO - test msvc
+- TODO - test netbeans 8.0 plugin
+
+
+** Relevant Trello Cards
+- https://trello.com/c/lYYw6lSZ - "Develop C/C++ build infrastructure on PAAS"
 
 ==========
 NOTES

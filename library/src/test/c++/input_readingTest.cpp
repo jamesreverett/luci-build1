@@ -28,3 +28,5 @@ TEST(InputReading, PositiveAverageOpenness) {
     InputReading input(10, 20, 12345);
     EXPECT_FLOAT_EQ(15, input.average_openness());
 }
+
+// TODO: test perclos near 0.35
