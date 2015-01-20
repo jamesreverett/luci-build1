@@ -73,7 +73,7 @@ void InputReading::EvaluateOpenness() {
     }
 }
 
-void InputReading::PrintJSON() {
+void InputReading::PrintJSON() const {
   printf("{left_ratio: %f, right_ratio: %f, used_ratio: %f, perclos_reading: %d, timestamp: %d, system_time: %d",
          left_openness_, right_openness_, average_openness_, perclos_, epoch_time_, device_timestamp_);
 }

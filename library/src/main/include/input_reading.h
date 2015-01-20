@@ -3,7 +3,7 @@
 
 // TODO: which namespace??
 
-const float kEyeRatioBarrier = 0.670000;
+const float kEyeRatioBarrier = 0.01;
 
 class InputReading {
     public:
